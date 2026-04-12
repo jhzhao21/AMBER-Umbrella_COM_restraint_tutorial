@@ -54,7 +54,8 @@ A study has shown that pulling from the middle of the membrane out allows faster
 You can use the python script to place the methanol molecule at z=0 from the DMPC bilayer center-of-mass:
 
 >./com_placement.py -i DMPC_72_relax.pdb -d methanol.pdb -z 0.0 > moh_center.pdb
-
+>antechamber -i LIG.mol2 -fi mol2 -o LIG-1.mol2 -fo mol2 -c bcc -nc 0 -pf y   # -nc 指定的是小分子的整体电荷
+>parmchk2 -i LIG-1.mol2 -f mol2 -o LIG.frcmod   # LIG.frcmod 是配体的参数文件
 **Important note:** The com_placement.py script defines the center-of-mass of the membrane using the PC N31 head group atoms in the lipids. It will not work if these are not present: if you wish to use other atoms, you'll have to update the code. Also, if your drug molecule contains unusual atom types, you may need to add the atomic mass of these atoms into the com_placement code.
 
 We can now create AMBER prmtop and inpcrd files of the system. First, to set the periodic box dimensions correctly, we use the vmd_box_dims.sh script from the A16 Lipid tutorial:
