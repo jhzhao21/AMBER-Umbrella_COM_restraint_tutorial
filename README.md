@@ -164,6 +164,7 @@ This should output two files: the imaged trajectory from which we extract the sn
 
 We can extract the window starting points using extract_window.py:
 >./extract_window.py -i bilayer_zero.nc -p DMPC_MOH.prmtop -d c0.out -start 0 -end 32 -space 2
+>./extract_window.py -i bilayer_zero_dehp.nc -p DMPC_dehp.prmtop -d c0_dehp.out -start 0 -end 32 -space 1 --suffix dehp
 
 This will output frames with the methanol at 0, 2, 4, ..., 32 A from the bilayer center-of-mass. These restarts are provided.
 
