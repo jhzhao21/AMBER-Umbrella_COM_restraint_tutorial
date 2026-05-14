@@ -360,15 +360,15 @@ Finally, we have only done the calculations for a single monolayer (water phase 
 >rm tmp  
 
 >./parse_fe_diff.py -fe full_fe.dat -diff full_diffusion.dat -start -32 -end 32 -space 2 -temp 303
->python parse_fe_diff1.py  -fe ../plot_dbp.dat -diff ../diffusion/all_diffusion_values_dbp.out -start 0 -end 32 -space 1 -temp 303 -tag dbp
->python parse_fe_diff1.py  -fe ../plot_dap.dat -diff ../diffusion/all_diffusion_values_dap.out -start 0 -end 32 -space 1 -temp 303 -tag dap
->python parse_fe_diff1.py  -fe ../plot_dmp.dat -diff ../diffusion/all_diffusion_values_dmp.out -start 0 -end 32 -space 1 -temp 303 -tag dmp
->python parse_fe_diff1.py  -fe ../plot_dehp.dat -diff ../diffusion/all_diffusion_values_dehp.out -start 0 -end 32 -space 1 -temp 303 -tag dehp
->python parse_fe_diff1.py  -fe ../plot_dhp.dat -diff ../diffusion/all_diffusion_values_dhp.out -start 0 -end 32 -space 1 -temp 303 -tag dhp
->python parse_fe_diff1.py  -fe ../plot_dpp.dat -diff ../diffusion/all_diffusion_values_dpp.out -start 0 -end 32 -space 1 -temp 303 -tag dpp
->python parse_fe_diff1.py  -fe ../plot_dep.dat -diff ../diffusion/all_diffusion_values_dep.out -start 0 -end 32 -space 1 -temp 303 -tag dep
->python parse_fe_diff1.py  -fe ../plot_dpp.dat -diff ../diffusion/all_diffusion_values_dpp.out -start 0 -end 32 -space 1 -temp 303 -tag dpp
->python parse_fe_diff1.py  -fe ../plot_dhpp.dat -diff ../diffusion/all_diffusion_values_dhpp.out -start 0 -end 32 -space 1 -temp 303 -tag dhpp
+python parse_fe_diff1.py  -fe ../plot_dbp.dat -diff ../diffusion/all_diffusion_values_dbp.out -start 0 -end 32 -space 1 -temp 303 -tag dbp
+python parse_fe_diff1.py  -fe ../plot_dap.dat -diff ../diffusion/all_diffusion_values_dap.out -start 0 -end 32 -space 1 -temp 303 -tag dap
+python parse_fe_diff1.py  -fe ../plot_dmp.dat -diff ../diffusion/all_diffusion_values_dmp.out -start 0 -end 32 -space 1 -temp 303 -tag dmp
+python parse_fe_diff1.py  -fe ../plot_dehp.dat -diff ../diffusion/all_diffusion_values_dehp.out -start 0 -end 32 -space 1 -temp 303 -tag dehp
+python parse_fe_diff1.py  -fe ../plot_dhp.dat -diff ../diffusion/all_diffusion_values_dhp.out -start 0 -end 32 -space 1 -temp 303 -tag dhp
+python parse_fe_diff1.py  -fe ../plot_dpp.dat -diff ../diffusion/all_diffusion_values_dpp.out -start 0 -end 32 -space 1 -temp 303 -tag dpp
+python parse_fe_diff1.py  -fe ../plot_dep.dat -diff ../diffusion/all_diffusion_values_dep.out -start 0 -end 32 -space 1 -temp 303 -tag dep
+python parse_fe_diff1.py  -fe ../plot_dpp.dat -diff ../diffusion/all_diffusion_values_dpp.out -start 0 -end 32 -space 1 -temp 303 -tag dpp
+python parse_fe_diff1.py  -fe ../plot_dhpp.dat -diff ../diffusion/all_diffusion_values_dhpp.out -start 0 -end 32 -space 1 -temp 303 -tag dhpp
 
 Will output the result for the full bilayer.  
 
